@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: '/large-image',
     images: [
       {
-        url: '/og-large-image.svg',
+        url: 'https://placehold.co/1200x630/3b82f6/ffffff/png?text=Large+Image+Card',
         width: 1200,
         height: 630,
         alt: 'Large Image Card Test - 1200x630 pixels',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     creator: '@yourhandle', // Recommended for large image cards
     title: 'Large Image Card Test',
     description: 'Testing OpenGraph large image cards (summary_large_image) for Twitter and other social media platforms. This card displays a large banner image.',
-    images: ['/og-large-image.svg'],
+    images: ['https://placehold.co/1200x630/3b82f6/ffffff/png?text=Large+Image+Card'],
   },
   other: {
     'twitter:image:alt': 'Large Image Card Test - 1200x630 pixels showing blue gradient background with Twitter bird emoji',
@@ -82,7 +82,7 @@ export default function LargeImagePage() {
           </h2>
           <div className="border rounded-lg overflow-hidden">
             <img
-              src="/og-large-image.svg"
+              src="https://placehold.co/1200x630/3b82f6/ffffff/png?text=Large+Image+Card"
               alt="Large Image Card Preview"
               className="w-full h-auto"
             />

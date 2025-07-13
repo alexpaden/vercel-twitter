@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     url: '/small-image',
     images: [
       {
-        url: '/og-small-image.svg',
+        url: 'https://placehold.co/280x280/10b981/ffffff/png?text=Small+Image',
         width: 280,
-        height: 150,
-        alt: 'Small Image Card Test - 280x150 pixels',
+        height: 280,
+        alt: 'Small Image Card Test - 280x280 pixels',
       },
     ],
   },
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     site: '@yourhandle', // Required: Website's Twitter handle
     title: 'Small Image Card Test',
     description: 'Testing OpenGraph small image cards (summary) for Twitter and other social media platforms. This card displays a compact square image.',
-    images: ['/og-small-image.svg'],
+    images: ['https://placehold.co/280x280/10b981/ffffff/png?text=Small+Image'],
   },
   other: {
-    'twitter:image:alt': 'Small Image Card Test - 280x150 pixels showing green gradient background with mobile phone emoji',
+    'twitter:image:alt': 'Small Image Card Test - 280x280 pixels showing green gradient background',
   },
 };
 
@@ -47,7 +47,7 @@ export default function SmallImagePage() {
               <code className="text-sm text-green-600">summary</code>
               
               <h3 className="font-medium text-gray-700 mb-2 mt-4">Image Dimensions:</h3>
-              <code className="text-sm text-green-600">280 × 150 pixels</code>
+              <code className="text-sm text-green-600">280 × 280 pixels (1:1 ratio)</code>
               
               <h3 className="font-medium text-gray-700 mb-2 mt-4">Best For:</h3>
               <ul className="text-sm text-gray-600 space-y-1">
@@ -81,7 +81,7 @@ export default function SmallImagePage() {
           </h2>
           <div className="border rounded-lg overflow-hidden inline-block">
             <img
-              src="/og-small-image.svg"
+              src="https://placehold.co/280x280/10b981/ffffff/png?text=Small+Image"
               alt="Small Image Card Preview"
               className="w-64 h-auto"
             />
