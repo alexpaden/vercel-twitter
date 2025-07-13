@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: 'https://placehold.co/1200x630/3b82f6/ffffff/png?text=OpenGraph+Testing+App',
+        url: '/large-card.png',
         width: 1200,
         height: 630,
         alt: 'OpenGraph Testing App - Test your social media card previews',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     site: '@yourhandle', // Required: Replace with your website's Twitter handle
     title: 'OpenGraph Testing App',
     description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms',
-    images: ['https://placehold.co/1200x630/3b82f6/ffffff/png?text=OpenGraph+Testing+App'],
+    images: ['/large-card.png'],
   },
   other: {
     'twitter:image:alt': 'OpenGraph Testing App - Test your social media card previews with different formats',

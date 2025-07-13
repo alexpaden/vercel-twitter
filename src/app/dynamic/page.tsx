@@ -11,9 +11,9 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const description = params.description || 'Testing dynamic OpenGraph content generation';
   
   // Generate dynamic image based on theme
-  const imageUrl = theme === 'dark' 
-    ? 'https://placehold.co/1200x630/1f2937/ffffff/png?text=Dark+Theme' 
-    : 'https://placehold.co/1200x630/3b82f6/ffffff/png?text=Light+Theme';
+  const imageUrl = theme === 'dark' || theme === 'large' 
+    ? '/large-card.png'
+    : '/small-card.png';
   const cardType = theme === 'large' ? 'summary_large_image' : 'summary';
   
   return {
@@ -27,8 +27,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       images: [
         {
           url: imageUrl,
-          width: theme === 'large' ? 1200 : 280,
-          height: theme === 'large' ? 630 : 280,
+          width: cardType === 'summary_large_image' ? 1200 : 280,
+          height: cardType === 'summary_large_image' ? 630 : 280,
           alt: `Dynamic content image - ${theme} theme`,
         },
       ],

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: '/small-image',
     images: [
       {
-        url: 'https://placehold.co/280x280/10b981/ffffff/png?text=Small+Image',
+        url: '/small-card.png',
         width: 280,
         height: 280,
         alt: 'Small Image Card Test - 280x280 pixels',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     site: '@yourhandle', // Required: Website's Twitter handle
     title: 'Small Image Card Test',
     description: 'Testing OpenGraph small image cards (summary) for Twitter and other social media platforms. This card displays a compact square image.',
-    images: ['https://placehold.co/280x280/10b981/ffffff/png?text=Small+Image'],
+    images: ['/small-card.png'],
   },
   other: {
     'twitter:image:alt': 'Small Image Card Test - 280x280 pixels showing green gradient background',
@@ -81,7 +81,7 @@ export default function SmallImagePage() {
           </h2>
           <div className="border rounded-lg overflow-hidden inline-block">
             <img
-              src="https://placehold.co/280x280/10b981/ffffff/png?text=Small+Image"
+              src="/small-card.png"
               alt="Small Image Card Preview"
               className="w-64 h-auto"
             />
