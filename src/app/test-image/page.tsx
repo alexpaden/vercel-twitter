@@ -47,7 +47,7 @@ export default function TestImagePage() {
             <h3 className="text-lg font-semibold text-gray-800 mb-3">Expected Result</h3>
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600 mb-2">✅ Large banner image (1200x630)</p>
-              <p className="text-sm text-gray-600 mb-2">✅ Title: "Image Test - X.com Card Validation"</p>
+              <p className="text-sm text-gray-600 mb-2">✅ Title: &quot;Image Test - X.com Card Validation&quot;</p>
               <p className="text-sm text-gray-600 mb-2">✅ Description with proper truncation</p>
               <p className="text-sm text-gray-600">✅ Card type: summary_large_image</p>
             </div>
@@ -68,8 +68,8 @@ export default function TestImagePage() {
         <div className="mt-8 p-4 bg-green-50 rounded-lg">
           <h3 className="font-medium text-green-800 mb-2">🎯 Purpose</h3>
           <p className="text-sm text-green-700">
-            This page uses a fresh URL that X.com hasn't cached yet. If images appear here but not on other pages, 
-            the issue is X.com's 7-day cache. If images still don't appear, there's a technical implementation issue.
+            This page uses a fresh URL that X.com hasn&apos;t cached yet. If images appear here but not on other pages, 
+            the issue is X.com&apos;s 7-day cache. If images still don&apos;t appear, there&apos;s a technical implementation issue.
           </p>
         </div>
       </div>
