@@ -17,6 +17,17 @@ export const metadata: Metadata = {
   title: "OpenGraph Testing App",
   description: "Testing different OpenGraph formats for Twitter and other social media platforms",
   metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
+  openGraph: {
+    title: 'OpenGraph Testing App',
+    description: 'Testing different OpenGraph formats for Twitter and other social media platforms',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'OpenGraph Testing App',
+  },
+  twitter: {
+    card: 'summary',
+    site: '@yourhandle', // Required: Replace with your website's Twitter handle
+  },
 };
 
 export default function RootLayout({

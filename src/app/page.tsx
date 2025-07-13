@@ -1,5 +1,35 @@
 import Link from "next/link";
 import TwitterHandleNote from "./components/TwitterHandleNote";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'OpenGraph Testing App - Test Twitter Cards & Social Media Previews',
+  description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms. Validate your social media previews with our testing tool.',
+  openGraph: {
+    title: 'OpenGraph Testing App',
+    description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms',
+    type: 'website',
+    url: '/',
+    images: [
+      {
+        url: '/og-large-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'OpenGraph Testing App - Test your social media card previews',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yourhandle', // Required: Replace with your website's Twitter handle
+    title: 'OpenGraph Testing App',
+    description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms',
+    images: ['/og-large-image.svg'],
+  },
+  other: {
+    'twitter:image:alt': 'OpenGraph Testing App - Test your social media card previews with different formats',
+  },
+};
 
 export default function Home() {
   const testPages = [
