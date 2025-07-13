@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@yourhandle', // Required: Website's Twitter handle
-    creator: '@yourhandle', // Recommended for large image cards
+    site: '@vercel', // Required: Replace with your actual Twitter/X handle
+    creator: '@vercel', // Recommended for large image cards
     title: 'Large Image Card Test',
     description: 'Testing OpenGraph large image cards (summary_large_image) for Twitter and other social media platforms. This card displays a large banner image.',
-    // images will be automatically generated from twitter-image.png
+    images: ['/large-image/twitter-image.png'], // Explicitly define the image path
   },
   other: {
     'twitter:image:alt': 'Large Image Card Test - 1200x630 pixels showing blue gradient background with Twitter bird emoji',

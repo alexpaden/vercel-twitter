@@ -25,11 +25,11 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     },
     twitter: {
       card: cardType as 'summary' | 'summary_large_image',
-      site: '@yourhandle', // Required: Website's Twitter handle
-      creator: cardType === 'summary_large_image' ? '@yourhandle' : undefined, // Recommended for large image cards
+      site: '@vercel', // Required: Replace with your actual Twitter/X handle
+      creator: cardType === 'summary_large_image' ? '@vercel' : undefined, // Recommended for large image cards
       title: title.toString(),
       description: description.toString(),
-      // images will be automatically generated from twitter-image.png
+      images: ['/dynamic/twitter-image.png'], // Explicitly define the image
     },
     other: {
       'twitter:image:alt': `Dynamic content image - ${theme} theme with ${cardType} card format`,

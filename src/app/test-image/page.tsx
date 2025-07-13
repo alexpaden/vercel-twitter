@@ -12,10 +12,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@yourhandle',
+    site: '@vercel', // Required: Replace with your actual Twitter/X handle
+    creator: '@vercel', // Recommended for content pages
     title: 'Image Test - X.com Card Validation', 
     description: 'Testing OpenGraph image display with fresh URL to bypass X.com cache. This should show a large banner image in Twitter cards.',
-    // Next.js will automatically use twitter-image.png
+    images: ['/test-image/twitter-image.png'], // Explicitly define the image
   },
   other: {
     'twitter:image:alt': 'Large banner image test for X.com card validation - should display a colorful graphic',

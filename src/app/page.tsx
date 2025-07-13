@@ -14,10 +14,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@yourhandle', // Required: Replace with your website's Twitter handle
+    site: '@vercel', // Required: Replace with your actual website's Twitter/X handle
+    creator: '@vercel', // Recommended for article/content pages
     title: 'OpenGraph Testing App',
     description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms',
-    // images will be automatically generated from twitter-image.png
+    images: ['/twitter-image.png'], // Explicitly define the image
   },
   other: {
     'twitter:image:alt': 'OpenGraph Testing App - Test your social media card previews with different formats',

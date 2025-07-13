@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    site: '@yourhandle', // Required: Website's Twitter handle
+    site: '@vercel', // Required: Replace with your actual Twitter/X handle
     title: 'No Image Card Test',
     description: 'Testing OpenGraph text-only cards without images for Twitter and other social media platforms. This demonstrates how cards look with title and description only.',
     // Intentionally no images property
