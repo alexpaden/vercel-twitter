@@ -11,7 +11,7 @@
   ],
   "headers": [
     {
-      "source": "/og-*.svg",
+      "source": "/og-(.*).svg",
       "headers": [
         {
           "key": "Cache-Control",
