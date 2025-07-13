@@ -16,11 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "OpenGraph Testing App",
   description: "Testing different OpenGraph formats for Twitter and other social media platforms",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || 
-    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 
-    'http://localhost:3000'
-  ),
+  metadataBase: new URL('https://vercel-twitter-alexpadens-projects.vercel.app'),
   openGraph: {
     title: 'OpenGraph Testing App',
     description: 'Testing different OpenGraph formats for Twitter and other social media platforms',
