@@ -10,10 +10,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const title = params.title || 'Dynamic Content Test';
   const description = params.description || 'Testing dynamic OpenGraph content generation';
   
-  // Generate dynamic image based on theme
-  const imageUrl = theme === 'dark' || theme === 'large' 
-    ? '/large-card.png'
-    : '/small-card.png';
+  // Determine card type based on theme
   const cardType = theme === 'large' ? 'summary_large_image' : 'summary';
   
   return {
@@ -24,14 +21,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       description: description.toString(),
       type: 'website',
       url: `/dynamic?theme=${theme}&title=${title}&description=${description}`,
-      images: [
-        {
-          url: imageUrl,
-          width: cardType === 'summary_large_image' ? 1200 : 280,
-          height: cardType === 'summary_large_image' ? 630 : 280,
-          alt: `Dynamic content image - ${theme} theme`,
-        },
-      ],
+      // images will be automatically generated from opengraph-image.png
     },
     twitter: {
       card: cardType as 'summary' | 'summary_large_image',
@@ -39,7 +29,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       creator: cardType === 'summary_large_image' ? '@yourhandle' : undefined, // Recommended for large image cards
       title: title.toString(),
       description: description.toString(),
-      images: [imageUrl],
+      // images will be automatically generated from twitter-image.png
     },
     other: {
       'twitter:image:alt': `Dynamic content image - ${theme} theme with ${cardType} card format`,

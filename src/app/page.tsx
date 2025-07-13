@@ -10,21 +10,14 @@ export const metadata: Metadata = {
     description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms',
     type: 'website',
     url: '/',
-    images: [
-      {
-        url: '/large-card.png',
-        width: 1200,
-        height: 630,
-        alt: 'OpenGraph Testing App - Test your social media card previews',
-      },
-    ],
+    // images will be automatically generated from opengraph-image.png
   },
   twitter: {
     card: 'summary_large_image',
     site: '@yourhandle', // Required: Replace with your website's Twitter handle
     title: 'OpenGraph Testing App',
     description: 'Test different OpenGraph card formats for X/Twitter and other social media platforms',
-    images: ['/large-card.png'],
+    // images will be automatically generated from twitter-image.png
   },
   other: {
     'twitter:image:alt': 'OpenGraph Testing App - Test your social media card previews with different formats',

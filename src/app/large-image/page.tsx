@@ -8,14 +8,7 @@ export const metadata: Metadata = {
     description: 'Testing OpenGraph large image cards (summary_large_image) for Twitter and other social media platforms. This card displays a large banner image.',
     type: 'website',
     url: '/large-image',
-    images: [
-      {
-        url: '/large-card.png',
-        width: 1200,
-        height: 630,
-        alt: 'Large Image Card Test - 1200x630 pixels',
-      },
-    ],
+    // images will be automatically generated from opengraph-image.png
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +16,7 @@ export const metadata: Metadata = {
     creator: '@yourhandle', // Recommended for large image cards
     title: 'Large Image Card Test',
     description: 'Testing OpenGraph large image cards (summary_large_image) for Twitter and other social media platforms. This card displays a large banner image.',
-    images: ['/large-card.png'],
+    // images will be automatically generated from twitter-image.png
   },
   other: {
     'twitter:image:alt': 'Large Image Card Test - 1200x630 pixels showing blue gradient background with Twitter bird emoji',
