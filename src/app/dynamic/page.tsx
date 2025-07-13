@@ -186,7 +186,7 @@ export default async function DynamicPage({ searchParams }: Props) {
                 />
               </div>
               <p className="text-xs text-gray-500 mt-2">
-                Note: This is a demo UI. In production, you'd implement form handling to generate URLs.
+                Note: This is a demo UI. In production, you&apos;d implement form handling to generate URLs.
               </p>
             </div>
           </div>

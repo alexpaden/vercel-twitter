@@ -55,7 +55,7 @@ export default function NoImagePage() {
             </h2>
             <div className="bg-purple-50 p-4 rounded-lg">
               <ol className="text-sm text-purple-800 space-y-2">
-                <li>1. Copy this page's URL</li>
+                <li>1. Copy this page&apos;s URL</li>
                 <li>2. Open Twitter/X and create a new post</li>
                 <li>3. Paste the URL into your post</li>
                 <li>4. Observe the text-only card preview</li>
