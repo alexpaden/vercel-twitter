@@ -4,8 +4,8 @@ export const metadata: Metadata = {
   title: 'Different Images per Platform - OpenGraph Testing',
   description: 'Testing different images for Twitter vs other platforms. Twitter shows a small square image with text overlay, while other platforms show a large banner.',
   openGraph: {
-    title: 'Different Images per Platform',
-    description: 'This page uses a large banner image for Facebook/LinkedIn and other platforms',
+    title: 'earn: SolarPunk Art Contest',
+    description: 'Click to view role details and submit your entry!',
     type: 'website',
     url: '/changing-image',
     // This will use opengraph-image.png (non-twitter-large.png) for Facebook, LinkedIn, etc.
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary', // Using 'summary' for small square image
     site: '@vercel', // Required: Replace with your actual Twitter/X handle
-    title: 'Twitter-Specific Image with Text',
-    description: 'This shows a small square image with text overlay specifically optimized for Twitter/X',
+    title: 'earn: SolarPunk Art Contest',
+    description: 'Click to view role details and submit your entry!',
     // This will use twitter-image.png (twitter-small.png) for Twitter
     images: ['/changing-image/twitter-image.png'],
   },
   other: {
-    'twitter:image:alt': 'Small square image with text overlay optimized for Twitter',
+    'twitter:image:alt': 'Click to view role details and submit your entry!',
   },
 };
 
