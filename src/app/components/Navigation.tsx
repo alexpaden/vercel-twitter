@@ -12,6 +12,7 @@ const Navigation = () => {
     { href: "/small-image", label: "Small Image" },
     { href: "/no-image", label: "No Image" },
     { href: "/dynamic", label: "Dynamic Content" },
+    { href: "/changing-image", label: "Platform-Specific" },
   ];
 
   return (
